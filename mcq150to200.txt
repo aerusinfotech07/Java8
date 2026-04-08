@@ -1,0 +1,726 @@
+# ✅ Tekstac-Oriented Core Java MCQs (151–200)
+
+---
+
+### **151. What will be the output?**
+
+```java
+String s1 = "Java";
+String s2 = new String("Java");
+System.out.println(s1.equals(s2));
+```
+
+A. true
+B. false
+C. Compilation error
+D. Runtime error
+
+**Answer:** A
+**Explanation:** `equals()` compares content, not reference. Both contain "Java".
+
+---
+
+### **152. What will be the output?**
+
+```java
+String s1 = "Java";
+String s2 = "Ja" + "va";
+System.out.println(s1 == s2);
+```
+
+A. true
+B. false
+C. Error
+D. Runtime exception
+
+**Answer:** A
+**Explanation:** Compile-time concatenation → same String Pool object.
+
+---
+
+### **153. What will be the output?**
+
+```java
+String s1 = "Java";
+String s2 = new String("Java").intern();
+System.out.println(s1 == s2);
+```
+
+A. true
+B. false
+
+**Answer:** A
+**Explanation:** `intern()` returns reference from String Pool.
+
+---
+
+### **154. What will be the output?**
+
+```java
+String s = "Java";
+s.replace("a", "o");
+System.out.println(s);
+```
+
+A. Jovo
+B. Java
+C. Error
+
+**Answer:** B
+**Explanation:** String is immutable; replace() result not stored.
+
+---
+
+### **155. What will be the output?**
+
+```java
+int x = 5;
+System.out.println(x++ + ++x + x++);
+```
+
+A. 16
+B. 17
+C. 18
+D. 19
+
+**Answer:** B
+**Explanation:**
+x++ → 5
+++x → 7
+x++ → 7
+Total = 5 + 7 + 7 = 19 ❗ Wait correction → Actually:
+Step-by-step:
+x=5 → x++ =5 (x=6)
+++x =7
+x++ =7 (x=8)
+Total = 5+7+7 = **19**
+👉 Correct Answer: **D**
+
+---
+
+### **156. What will be the output?**
+
+```java
+System.out.println(10 + 20 + "Java" + 30 + 40);
+```
+
+A. 30Java3040
+B. Java10203040
+C. 1020Java3040
+
+**Answer:** A
+**Explanation:** Left-to-right evaluation.
+
+---
+
+### **157. What happens here?**
+
+```java
+int arr[] = new int[2];
+System.out.println(arr[2]);
+```
+
+A. 0
+B. null
+C. ArrayIndexOutOfBoundsException
+D. Compilation error
+
+**Answer:** C
+**Explanation:** Index starts from 0 → max index = 1.
+
+---
+
+### **158. What will be the output?**
+
+```java
+Integer a = 127;
+Integer b = 127;
+System.out.println(a == b);
+```
+
+A. true
+B. false
+
+**Answer:** A
+**Explanation:** Integer caching (-128 to 127).
+
+---
+
+### **159. What will be the output?**
+
+```java
+Integer a = 128;
+Integer b = 128;
+System.out.println(a == b);
+```
+
+A. true
+B. false
+
+**Answer:** B
+**Explanation:** Outside cache range → different objects.
+
+---
+
+### **160. What will be the output?**
+
+```java
+System.out.println(Math.min(Double.NaN, 5.0));
+```
+
+A. 5.0
+B. NaN
+C. Error
+
+**Answer:** B
+**Explanation:** Any operation with NaN → NaN.
+
+---
+
+### **161. What will be the output?**
+
+```java
+try {
+    int x = 10/0;
+} catch (Exception e) {
+    System.out.print("A");
+} finally {
+    System.out.print("B");
+}
+```
+
+A. A
+B. B
+C. AB
+D. BA
+
+**Answer:** C
+**Explanation:** catch executes then finally always executes.
+
+---
+
+### **162. What will be the output?**
+
+```java
+System.out.println("abc".substring(1,3));
+```
+
+A. bc
+B. ab
+C. c
+D. Error
+
+**Answer:** A
+**Explanation:** start index inclusive, end exclusive.
+
+---
+
+### **163. What will be the output?**
+
+```java
+List<Integer> list = new ArrayList<>();
+list.add(1);
+list.add(2);
+list.add(1);
+System.out.println(list.size());
+```
+
+A. 2
+B. 3
+
+**Answer:** B
+**Explanation:** List allows duplicates.
+
+---
+
+### **164. What will be the output?**
+
+```java
+Set<Integer> set = new HashSet<>();
+set.add(1);
+set.add(2);
+set.add(1);
+System.out.println(set.size());
+```
+
+A. 2
+B. 3
+
+**Answer:** A
+**Explanation:** Set does not allow duplicates.
+
+---
+
+### **165. What happens?**
+
+```java
+HashMap map = new HashMap();
+map.put(null, 1);
+map.put(null, 2);
+System.out.println(map.size());
+```
+
+A. 1
+B. 2
+C. Error
+
+**Answer:** A
+**Explanation:** HashMap allows one null key.
+
+---
+
+### **166. What will be the output?**
+
+```java
+StringBuilder sb = new StringBuilder("Java");
+sb.append("World");
+System.out.println(sb);
+```
+
+A. Java
+B. JavaWorld
+
+**Answer:** B
+**Explanation:** StringBuilder is mutable.
+
+---
+
+### **167. What is the output?**
+
+```java
+System.out.println("Java".compareTo("java"));
+```
+
+A. 0
+B. Negative
+C. Positive
+
+**Answer:** B
+**Explanation:** 'J' < 'j' (ASCII comparison).
+
+---
+
+### **168. What is the output?**
+
+```java
+System.out.println(5 == 5.0);
+```
+
+A. true
+B. false
+
+**Answer:** A
+**Explanation:** Automatic type promotion.
+
+---
+
+### **169. What happens?**
+
+```java
+final int x;
+x = 10;
+x = 20;
+```
+
+A. Compiles
+B. Runtime error
+C. Compilation error
+
+**Answer:** C
+**Explanation:** final variable cannot be reassigned.
+
+---
+
+### **170. What will be the output?**
+
+```java
+System.out.println(null == null);
+```
+
+A. true
+B. false
+C. Error
+
+**Answer:** A
+
+---
+
+### **171. What will be the output?**
+
+```java
+String s = null;
+System.out.println("abc".equals(s));
+```
+
+A. true
+B. false
+C. Exception
+
+**Answer:** B
+**Explanation:** equals() handles null safely.
+
+---
+
+### **172. What will be the output?**
+
+```java
+System.out.println(1 + '1');
+```
+
+A. 2
+B. 50
+C. 49
+
+**Answer:** B
+**Explanation:** '1' ASCII = 49 → 49 + 1 = 50.
+
+---
+
+### **173. What is the output?**
+
+```java
+System.out.println(true == true);
+```
+
+A. true
+B. false
+
+**Answer:** A
+
+---
+
+### **174. What happens?**
+
+```java
+List list = new ArrayList();
+list.add("A");
+list.add(10);
+```
+
+A. Compilation error
+B. Works fine
+C. Runtime error
+
+**Answer:** B
+**Explanation:** Raw types allow mixed data.
+
+---
+
+### **175. What is the output?**
+
+```java
+System.out.println(10 + null);
+```
+
+A. 10
+B. null
+C. Compilation error
+
+**Answer:** C
+
+---
+
+### **176. What will be the output?**
+
+```java
+System.out.println("Java" + null);
+```
+
+A. Javanull
+B. Java
+C. Error
+
+**Answer:** A
+
+---
+
+### **177. What happens?**
+
+```java
+Thread t = new Thread();
+t.run();
+```
+
+A. New thread starts
+B. Runs as normal method
+C. Error
+
+**Answer:** B
+**Explanation:** run() does not create new thread.
+
+---
+
+### **178. What is the output?**
+
+```java
+System.out.println(Math.round(2.5));
+```
+
+A. 2
+B. 3
+
+**Answer:** B
+
+---
+
+### **179. What is the output?**
+
+```java
+System.out.println(Math.floor(2.9));
+```
+
+A. 2
+B. 3
+
+**Answer:** A
+
+---
+
+### **180. What is the output?**
+
+```java
+System.out.println(Math.ceil(2.1));
+```
+
+A. 2
+B. 3
+
+**Answer:** B
+
+---
+
+### **181. Which is functional interface?**
+
+A. Runnable
+B. Comparator
+C. Both
+D. None
+
+**Answer:** C
+
+---
+
+### **182. What happens if two threads access same resource without sync?**
+
+A. Safe
+B. Deadlock
+C. Race condition
+
+**Answer:** C
+
+---
+
+### **183. What is the output?**
+
+```java
+System.out.println("abc".toUpperCase());
+```
+
+A. ABC
+B. abc
+
+**Answer:** A
+
+---
+
+### **184. Which is terminal stream operation?**
+
+A. map()
+B. filter()
+C. collect()
+D. sorted()
+
+**Answer:** C
+
+---
+
+### **185. What is the output?**
+
+```java
+System.out.println("abc".indexOf('b'));
+```
+
+A. 1
+B. 2
+
+**Answer:** A
+
+---
+
+### **186. What happens?**
+
+```java
+int x = Integer.parseInt("abc");
+```
+
+A. 0
+B. Exception
+C. Compilation error
+
+**Answer:** B
+
+---
+
+### **187. What is the output?**
+
+```java
+System.out.println(10 + 10 + "10");
+```
+
+A. 2010
+B. 101010
+
+**Answer:** A
+
+---
+
+### **188. What is the output?**
+
+```java
+System.out.println("10" + 10 + 10);
+```
+
+A. 101010
+B. 2010
+
+**Answer:** A
+
+---
+
+### **189. Which is not a stream method?**
+
+A. map()
+B. filter()
+C. reduce()
+D. iterate()
+
+**Answer:** D
+
+---
+
+### **190. What is default value of char?**
+
+A. null
+B. 0
+C. '\u0000'
+
+**Answer:** C
+
+---
+
+### **191. What happens?**
+
+```java
+String s = "";
+System.out.println(s.isEmpty());
+```
+
+A. true
+B. false
+
+**Answer:** A
+
+---
+
+### **192. Which method trims spaces?**
+
+A. trim()
+B. strip()
+C. Both
+
+**Answer:** C
+
+---
+
+### **193. What is the output?**
+
+```java
+System.out.println(10 > 5 ? "Yes" : "No");
+```
+
+A. Yes
+B. No
+
+**Answer:** A
+
+---
+
+### **194. Which keyword prevents overriding?**
+
+A. static
+B. final
+C. private
+
+**Answer:** B
+
+---
+
+### **195. What is output?**
+
+```java
+System.out.println(5 & 3);
+```
+
+A. 1
+B. 2
+C. 3
+
+**Answer:** A
+**Explanation:** 0101 & 0011 = 0001.
+
+---
+
+### **196. Which is logical AND?**
+
+A. &
+B. &&
+
+**Answer:** B
+
+---
+
+### **197. Which is bitwise AND?**
+
+A. &
+B. &&
+
+**Answer:** A
+
+---
+
+### **198. Which operator is ternary?**
+
+A. ?:
+B. ??
+
+**Answer:** A
+
+---
+
+### **199. What is the output?**
+
+```java
+System.out.println(1 << 2);
+```
+
+A. 2
+B. 4
+C. 8
+
+**Answer:** B
+
+---
+
+### **200. What is the output?**
+
+```java
+System.out.println(8 >> 2);
+```
+
+A. 2
+B. 4
+C. 8
+
+**Answer:** A
+
+---
