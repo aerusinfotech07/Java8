@@ -1,0 +1,674 @@
+
+# ✅ Advanced Core Java MCQs (101–150)
+
+---
+
+### **101. What will be the output?**
+
+```java
+String s1 = "Java";
+String s2 = "Java";
+System.out.println(s1 == s2);
+```
+
+A. true
+B. false
+C. Compilation error
+D. Runtime error
+
+**Answer:** A
+**Explanation:** String literals are stored in the String Pool, so both references point to the same object.
+
+---
+
+### **102. What will be the output?**
+
+```java
+String s1 = new String("Java");
+String s2 = new String("Java");
+System.out.println(s1 == s2);
+```
+
+A. true
+B. false
+C. Compilation error
+D. Runtime error
+
+**Answer:** B
+**Explanation:** `new` creates separate objects in heap.
+
+---
+
+### **103. What will be the output?**
+
+```java
+String s = "Java";
+s.concat("World");
+System.out.println(s);
+```
+
+A. JavaWorld
+B. Java
+C. Compilation error
+D. Runtime error
+
+**Answer:** B
+**Explanation:** String is immutable; concat() does not modify original.
+
+---
+
+### **104. What will be the output?**
+
+```java
+int x = 10;
+System.out.println(x++ + ++x);
+```
+
+A. 20
+B. 21
+C. 22
+D. 23
+
+**Answer:** C
+**Explanation:** `x++` → 10, then `++x` → 12 ⇒ total = 22.
+
+---
+
+### **105. What will be the output?**
+
+```java
+System.out.println(10 + 20 + "Java" + 10 + 20);
+```
+
+A. 30Java1020
+B. Java301020
+C. 1020Java1020
+D. Error
+
+**Answer:** A
+**Explanation:** Left-to-right evaluation; first numeric addition then string concatenation.
+
+---
+
+### **106. What happens if main() is not static?**
+
+A. Runs normally
+B. Compilation error
+C. Runtime error
+D. JVM error
+
+**Answer:** C
+**Explanation:** JVM cannot call non-static main method.
+
+---
+
+### **107. What is the output?**
+
+```java
+int a = 5;
+if(a = 10) {
+    System.out.println("Yes");
+}
+```
+
+A. Yes
+B. No output
+C. Compilation error
+D. Runtime error
+
+**Answer:** C
+**Explanation:** Assignment used instead of condition (boolean expected).
+
+---
+
+### **108. What is the output?**
+
+```java
+System.out.println('A' + 1);
+```
+
+A. A1
+B. B
+C. 66
+D. Error
+
+**Answer:** C
+**Explanation:** 'A' → ASCII 65, so 65 + 1 = 66.
+
+---
+
+### **109. What is the output?**
+
+```java
+System.out.println(1 + 2 + "3");
+```
+
+A. 33
+B. 123
+C. 6
+D. Error
+
+**Answer:** A
+**Explanation:** 1+2=3 → "3" + "3" = "33".
+
+---
+
+### **110. What is the output?**
+
+```java
+System.out.println("1" + 2 + 3);
+```
+
+A. 123
+B. 15
+C. 6
+D. Error
+
+**Answer:** A
+**Explanation:** String concatenation: "1"+"2"="12", then "12"+"3"="123".
+
+---
+
+### **111. Which class is used for synchronization block?**
+
+A. Thread
+B. Object
+C. Lock
+D. Monitor
+
+**Answer:** B
+**Explanation:** Every object has intrinsic lock.
+
+---
+
+### **112. Which method releases lock in wait()?**
+
+A. notify()
+B. sleep()
+C. wait()
+D. yield()
+
+**Answer:** C
+**Explanation:** `wait()` releases lock and waits.
+
+---
+
+### **113. What is the output?**
+
+```java
+String s = null;
+System.out.println(s.length());
+```
+
+A. 0
+B. null
+C. Compilation error
+D. NullPointerException
+
+**Answer:** D
+**Explanation:** Accessing method on null causes exception.
+
+---
+
+### **114. What is the output?**
+
+```java
+int[] arr = new int[3];
+System.out.println(arr[0]);
+```
+
+A. 0
+B. null
+C. Garbage value
+D. Error
+
+**Answer:** A
+**Explanation:** Default value of int array is 0.
+
+---
+
+### **115. Which is fastest for insertion?**
+
+A. ArrayList
+B. LinkedList
+C. Vector
+D. Stack
+
+**Answer:** B
+**Explanation:** LinkedList is efficient for insertion/deletion.
+
+---
+
+### **116. What is deadlock?**
+
+A. Thread running
+B. Infinite loop
+C. Threads waiting forever
+D. Exception
+
+**Answer:** C
+**Explanation:** Threads block each other indefinitely.
+
+---
+
+### **117. What is the output?**
+
+```java
+System.out.println(10/0);
+```
+
+A. 0
+B. Infinity
+C. ArithmeticException
+D. Compilation error
+
+**Answer:** C
+
+---
+
+### **118. What is the output?**
+
+```java
+System.out.println(10.0/0);
+```
+
+A. Exception
+B. Infinity
+C. 0
+D. Error
+
+**Answer:** B
+**Explanation:** Floating-point division gives Infinity.
+
+---
+
+### **119. What is the output?**
+
+```java
+String s = "Java";
+System.out.println(s.charAt(4));
+```
+
+A. a
+B. Exception
+C. null
+D. Error
+
+**Answer:** B
+**Explanation:** Index out of bounds.
+
+---
+
+### **120. Which is not valid String method?**
+
+A. length()
+B. substring()
+C. append()
+D. charAt()
+
+**Answer:** C
+**Explanation:** append() belongs to StringBuilder.
+
+---
+
+### **121. What is the output?**
+
+```java
+System.out.println(true + "");
+```
+
+A. true
+B. 1
+C. Error
+D. null
+
+**Answer:** A
+
+---
+
+### **122. What is the output?**
+
+```java
+int x = 5;
+System.out.println(++x + x++);
+```
+
+A. 11
+B. 12
+C. 13
+D. 10
+
+**Answer:** B
+**Explanation:** ++x=6, x++=6 → total=12.
+
+---
+
+### **123. What is the output?**
+
+```java
+String s = "abc";
+s = s.toUpperCase();
+System.out.println(s);
+```
+
+A. abc
+B. ABC
+C. Error
+D. null
+
+**Answer:** B
+
+---
+
+### **124. Which is not thread method?**
+
+A. start()
+B. run()
+C. stop()
+D. execute()
+
+**Answer:** D
+
+---
+
+### **125. Which collection does not allow duplicates?**
+
+A. List
+B. Set
+C. Map
+D. Queue
+
+**Answer:** B
+
+---
+
+### **126. Which map maintains insertion order?**
+
+A. HashMap
+B. TreeMap
+C. LinkedHashMap
+D. Hashtable
+
+**Answer:** C
+
+---
+
+### **127. Which map sorts keys?**
+
+A. HashMap
+B. TreeMap
+C. LinkedHashMap
+D. Hashtable
+
+**Answer:** B
+
+---
+
+### **128. Which is not List implementation?**
+
+A. ArrayList
+B. LinkedList
+C. Vector
+D. HashSet
+
+**Answer:** D
+
+---
+
+### **129. Which is fail-fast?**
+
+A. ArrayList
+B. Vector
+C. Hashtable
+D. Stack
+
+**Answer:** A
+
+---
+
+### **130. Which exception occurs at compile time?**
+
+A. RuntimeException
+B. IOException
+C. NullPointerException
+D. ArithmeticException
+
+**Answer:** B
+
+---
+
+### **131. What is the output?**
+
+```java
+System.out.println("Java".equals("java"));
+```
+
+A. true
+B. false
+C. Error
+D. null
+
+**Answer:** B
+
+---
+
+### **132. What is the output?**
+
+```java
+System.out.println("Java".equalsIgnoreCase("java"));
+```
+
+A. true
+B. false
+C. Error
+D. null
+
+**Answer:** A
+
+---
+
+### **133. Which keyword is used for thread creation?**
+
+A. thread
+B. Runnable
+C. new
+D. Both B & C
+
+**Answer:** D
+
+---
+
+### **134. Which method resumes thread?**
+
+A. resume()
+B. start()
+C. notify()
+D. continue()
+
+**Answer:** A *(deprecated)*
+
+---
+
+### **135. Which is not valid access modifier?**
+
+A. public
+B. private
+C. protected
+D. friendly
+
+**Answer:** D
+
+---
+
+### **136. What is the output?**
+
+```java
+System.out.println(5 + 5 + "5" + 5 + 5);
+```
+
+A. 10555
+B. 10510
+C. 10555
+D. 55555
+
+**Answer:** A
+
+---
+
+### **137. Which is immutable class?**
+
+A. String
+B. Date
+C. StringBuilder
+D. ArrayList
+
+**Answer:** A
+
+---
+
+### **138. Which is not wrapper class?**
+
+A. Integer
+B. Double
+C. Character
+D. StringBuilder
+
+**Answer:** D
+
+---
+
+### **139. Which keyword is used for constant?**
+
+A. static
+B. final
+C. const
+D. fixed
+
+**Answer:** B
+
+---
+
+### **140. Which is not Java feature?**
+
+A. Platform independent
+B. Secure
+C. Pointer arithmetic
+D. Multithreaded
+
+**Answer:** C
+
+---
+
+### **141. What is the output?**
+
+```java
+System.out.println(10 + "20" + 30);
+```
+
+A. 102030
+B. 302030
+C. 1030
+D. Error
+
+**Answer:** A
+
+---
+
+### **142. Which is not collection?**
+
+A. List
+B. Set
+C. Map
+D. Thread
+
+**Answer:** D
+
+---
+
+### **143. Which class is used for date/time API (Java 8)?**
+
+A. Date
+B. Calendar
+C. LocalDate
+D. Timer
+
+**Answer:** C
+
+---
+
+### **144. Which is not valid identifier?**
+
+A. _abc
+B. $abc
+C. abc123
+D. 123abc
+
+**Answer:** D
+
+---
+
+### **145. Which is not loop?**
+
+A. for
+B. while
+C. do-while
+D. repeat
+
+**Answer:** D
+
+---
+
+### **146. Which keyword is used for inheritance?**
+
+A. extend
+B. extends
+C. implement
+D. inherits
+
+**Answer:** B
+
+---
+
+### **147. Which interface supports lambda expressions?**
+
+A. Runnable
+B. Functional Interface
+C. Serializable
+D. Comparable
+
+**Answer:** B
+
+---
+
+### **148. Which annotation defines functional interface?**
+
+A. @Override
+B. @FunctionalInterface
+C. @Lambda
+D. @Interface
+
+**Answer:** B
+
+---
+
+### **149. Which is not stream operation?**
+
+A. filter()
+B. map()
+C. reduce()
+D. loop()
+
+**Answer:** D
+
+---
+
+### **150. Which is terminal operation in streams?**
+
+A. filter()
+B. map()
+C. collect()
+D. sorted()
+
+**Answer:** C
+
+---
