@@ -1,0 +1,582 @@
+
+# ✅ Core Java MCQs (51–100)
+
+---
+
+### **51. What is the default value of an object reference?**
+
+A. 0
+B. undefined
+C. null
+D. blank
+
+**Answer:** C
+**Explanation:** Object references are initialized to `null` by default.
+
+---
+
+### **52. Which of the following is not an exception?**
+
+A. IOException
+B. SQLException
+C. Error
+D. RuntimeException
+
+**Answer:** C
+**Explanation:** `Error` represents serious issues not meant to be handled like exceptions.
+
+---
+
+### **53. Which keyword is used to explicitly throw an exception?**
+
+A. throws
+B. throw
+C. catch
+D. try
+
+**Answer:** B
+**Explanation:** `throw` is used to create and throw an exception.
+
+---
+
+### **54. Which block handles an exception?**
+
+A. try
+B. throw
+C. catch
+D. finally
+
+**Answer:** C
+**Explanation:** `catch` block handles exceptions.
+
+---
+
+### **55. Which collection is fastest for retrieval operations?**
+
+A. LinkedList
+B. ArrayList
+C. HashSet
+D. TreeSet
+
+**Answer:** B
+**Explanation:** ArrayList provides fast random access using index.
+
+---
+
+### **56. Which collection class is synchronized?**
+
+A. ArrayList
+B. HashMap
+C. Vector
+D. HashSet
+
+**Answer:** C
+**Explanation:** Vector is thread-safe (synchronized).
+
+---
+
+### **57. Which data structure follows LIFO?**
+
+A. Queue
+B. Stack
+C. ArrayList
+D. LinkedList
+
+**Answer:** B
+**Explanation:** Stack uses Last-In-First-Out.
+
+---
+
+### **58. Which data structure follows FIFO?**
+
+A. Stack
+B. Queue
+C. Set
+D. Map
+
+**Answer:** B
+**Explanation:** Queue follows First-In-First-Out.
+
+---
+
+### **59. Which method removes an element from a collection?**
+
+A. delete()
+B. remove()
+C. pop()
+D. clearOne()
+
+**Answer:** B
+**Explanation:** `remove()` deletes an element.
+
+---
+
+### **60. Which class is thread-safe for string operations?**
+
+A. String
+B. StringBuilder
+C. StringBuffer
+D. CharSequence
+
+**Answer:** C
+**Explanation:** StringBuffer is synchronized.
+
+---
+
+### **61. Which of the following is not a Java keyword?**
+
+A. class
+B. main
+C. static
+D. void
+
+**Answer:** B
+**Explanation:** `main` is a method name, not a keyword.
+
+---
+
+### **62. Which is not a primitive type?**
+
+A. int
+B. double
+C. Object
+D. char
+
+**Answer:** C
+**Explanation:** Object is a class.
+
+---
+
+### **63. Which class is parent of all exceptions and errors?**
+
+A. Exception
+B. Error
+C. Throwable
+D. Object
+
+**Answer:** C
+**Explanation:** `Throwable` is the root class.
+
+---
+
+### **64. What is runtime polymorphism?**
+
+A. Method overloading
+B. Method overriding
+C. Constructor overloading
+D. Compilation
+
+**Answer:** B
+**Explanation:** Achieved via method overriding.
+
+---
+
+### **65. What is compile-time polymorphism?**
+
+A. Overriding
+B. Overloading
+C. Inheritance
+D. Abstraction
+
+**Answer:** B
+**Explanation:** Method overloading is resolved at compile time.
+
+---
+
+### **66. Which annotation is used for method overriding?**
+
+A. @Override
+B. @Overload
+C. @OverrideMethod
+D. @Super
+
+**Answer:** A
+**Explanation:** Helps ensure correct overriding.
+
+---
+
+### **67. Which class is used for input from user?**
+
+A. BufferedReader
+B. Scanner
+C. Console
+D. All
+
+**Answer:** D
+**Explanation:** All can take user input.
+
+---
+
+### **68. Which is used for standard output?**
+
+A. System.in
+B. System.out
+C. System.err
+D. System.print
+
+**Answer:** B
+**Explanation:** Used for printing output.
+
+---
+
+### **69. Which method prints with newline?**
+
+A. print()
+B. println()
+C. printf()
+D. write()
+
+**Answer:** B
+**Explanation:** Adds newline after printing.
+
+---
+
+### **70. Which class is immutable?**
+
+A. String
+B. StringBuilder
+C. StringBuffer
+D. ArrayList
+
+**Answer:** A
+**Explanation:** String cannot be modified.
+
+---
+
+### **71. Which class represents resizable array?**
+
+A. Vector
+B. ArrayList
+C. LinkedList
+D. Stack
+
+**Answer:** B
+**Explanation:** ArrayList dynamically resizes.
+
+---
+
+### **72. Which is not a thread state?**
+
+A. Runnable
+B. Waiting
+C. Blocked
+D. RunningFast
+
+**Answer:** D
+**Explanation:** Not a valid state.
+
+---
+
+### **73. Which keyword defines package?**
+
+A. import
+B. package
+C. include
+D. namespace
+
+**Answer:** B
+
+---
+
+### **74. Which keyword is used to import packages?**
+
+A. include
+B. import
+C. using
+D. require
+
+**Answer:** B
+
+---
+
+### **75. Which class generates random numbers?**
+
+A. Math
+B. Random
+C. SecureRandom
+D. All
+
+**Answer:** D
+**Explanation:** All can generate random values.
+
+---
+
+### **76. Which is not an OOP principle?**
+
+A. Inheritance
+B. Polymorphism
+C. Compilation
+D. Encapsulation
+
+**Answer:** C
+
+---
+
+### **77. Which class loads Java classes?**
+
+A. ClassLoader
+B. Loader
+C. Bootstrap
+D. JVMClass
+
+**Answer:** A
+
+---
+
+### **78. Which is not a JVM component?**
+
+A. ClassLoader
+B. Execution Engine
+C. Garbage Collector
+D. Compiler
+
+**Answer:** D
+**Explanation:** Compiler is outside JVM (part of JDK).
+
+---
+
+### **79. Which is not JVM memory area?**
+
+A. Heap
+B. Stack
+C. Method Area
+D. Cache
+
+**Answer:** D
+
+---
+
+### **80. Which is not part of Collection interface hierarchy?**
+
+A. List
+B. Set
+C. Queue
+D. Map
+
+**Answer:** D
+**Explanation:** Map is separate hierarchy.
+
+---
+
+### **81. Which collection sorts elements automatically?**
+
+A. ArrayList
+B. HashSet
+C. TreeSet
+D. LinkedList
+
+**Answer:** C
+
+---
+
+### **82. Which method sorts list?**
+
+A. Arrays.sort()
+B. Collections.sort()
+C. List.sort()
+D. All
+
+**Answer:** D
+
+---
+
+### **83. Which class is base for synchronization?**
+
+A. Thread
+B. Object
+C. System
+D. Lock
+
+**Answer:** B
+**Explanation:** Every object has a monitor lock.
+
+---
+
+### **84. Which is not Java keyword?**
+
+A. abstract
+B. include
+C. final
+D. native
+
+**Answer:** B
+
+---
+
+### **85. Which is invalid identifier?**
+
+A. abc123
+B. _name
+C. $value
+D. 123abc
+
+**Answer:** D
+**Explanation:** Cannot start with digit.
+
+---
+
+### **86. Default access modifier is:**
+
+A. public
+B. private
+C. protected
+D. package-private
+
+**Answer:** D
+
+---
+
+### **87. Which method is used for cloning?**
+
+A. copy()
+B. clone()
+C. duplicate()
+D. replicate()
+
+**Answer:** B
+
+---
+
+### **88. Which interface supports iteration?**
+
+A. Iterator
+B. Iterable
+C. Collection
+D. Enumeration
+
+**Answer:** B
+
+---
+
+### **89. Which is not exception keyword?**
+
+A. try
+B. catch
+C. throw
+D. final
+
+**Answer:** D
+
+---
+
+### **90. Which is not a loop?**
+
+A. for
+B. while
+C. do
+D. repeat
+
+**Answer:** D
+
+---
+
+### **91. Java does not support:**
+
+A. Encapsulation
+B. Inheritance
+C. Multiple inheritance (class)
+D. Polymorphism
+
+**Answer:** C
+
+---
+
+### **92. Which is a thread state?**
+
+A. Running
+B. Runnable
+C. Executing
+D. Processing
+
+**Answer:** B
+
+---
+
+### **93. Which method pauses thread?**
+
+A. wait()
+B. sleep()
+C. stop()
+D. halt()
+
+**Answer:** B
+
+---
+
+### **94. Which is not access modifier?**
+
+A. public
+B. private
+C. protected
+D. internal
+
+**Answer:** D
+
+---
+
+### **95. Which is not valid data type?**
+
+A. int
+B. float
+C. real
+D. double
+
+**Answer:** C
+
+---
+
+### **96. Which is not Java operator?**
+
+A. +
+B. &&
+C. <>
+D. ==
+
+**Answer:** C
+
+---
+
+### **97. Which is not a collection?**
+
+A. List
+B. Set
+C. Map
+D. Pointer
+
+**Answer:** D
+
+---
+
+### **98. Which class formats output?**
+
+A. Formatter
+B. PrintWriter
+C. Console
+D. All
+
+**Answer:** D
+
+---
+
+### **99. Which method converts object to String?**
+
+A. value()
+B. toString()
+C. convert()
+D. stringify()
+
+**Answer:** B
+
+---
+
+### **100. Which package is automatically imported?**
+
+A. java.util
+B. java.io
+C. java.lang
+D. java.net
+
+**Answer:** C
+**Explanation:** `java.lang` is imported by default.
+
+---

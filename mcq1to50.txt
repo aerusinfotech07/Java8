@@ -1,0 +1,590 @@
+
+# ✅ Core Java MCQs (1–50)
+
+---
+
+### **1. Which of the following is not a Java feature?**
+
+A. Object-oriented
+B. Use of pointers
+C. Portable
+D. Dynamic
+
+**Answer:** B
+**Explanation:** Java avoids pointers to ensure security and simplicity.
+
+---
+
+### **2. What is JVM?**
+
+A. Java Variable Machine
+B. Java Virtual Machine
+C. Java Verified Machine
+D. Java Visual Machine
+
+**Answer:** B
+**Explanation:** JVM runs Java bytecode and provides platform independence.
+
+---
+
+### **3. Which keyword is used for inheritance?**
+
+A. this
+B. super
+C. extends
+D. implements
+
+**Answer:** C
+**Explanation:** `extends` allows one class to inherit another.
+
+---
+
+### **4. Which method is the entry point of a Java program?**
+
+A. start()
+B. run()
+C. main()
+D. init()
+
+**Answer:** C
+**Explanation:** Execution starts from `public static void main(String[] args)`.
+
+---
+
+### **5. Which of the following is not an OOP concept?**
+
+A. Encapsulation
+B. Polymorphism
+C. Compilation
+D. Inheritance
+
+**Answer:** C
+**Explanation:** Compilation is part of program execution, not OOP.
+
+---
+
+### **6. Which keyword prevents inheritance?**
+
+A. static
+B. final
+C. abstract
+D. private
+
+**Answer:** B
+**Explanation:** A `final` class cannot be extended.
+
+---
+
+### **7. Which is not a primitive data type?**
+
+A. int
+B. float
+C. String
+D. boolean
+
+**Answer:** C
+**Explanation:** `String` is a class, not a primitive.
+
+---
+
+### **8. What is the size of int in Java?**
+
+A. 2 bytes
+B. 4 bytes
+C. 8 bytes
+D. Depends on OS
+
+**Answer:** B
+**Explanation:** Java int is always 4 bytes (32 bits).
+
+---
+
+### **9. Which method is used to compare object contents?**
+
+A. ==
+B. equals()
+C. compare()
+D. instanceof
+
+**Answer:** B
+**Explanation:** `equals()` compares values/content, while `==` compares references.
+
+---
+
+### **10. Default value of boolean?**
+
+A. true
+B. false
+C. null
+D. 0
+
+**Answer:** B
+**Explanation:** Default boolean value is `false`.
+
+---
+
+### **11. Which loop executes at least once?**
+
+A. for
+B. while
+C. do-while
+D. foreach
+
+**Answer:** C
+**Explanation:** `do-while` runs before checking condition.
+
+---
+
+### **12. Which are exception handling keywords?**
+
+A. try
+B. catch
+C. throw
+D. All
+
+**Answer:** D
+**Explanation:** All are used in exception handling.
+
+---
+
+### **13. Superclass of all Java classes?**
+
+A. Object
+B. Class
+C. System
+D. String
+
+**Answer:** A
+**Explanation:** Every class inherits from `Object`.
+
+---
+
+### **14. Which package contains Scanner?**
+
+A. java.io
+B. java.util
+C. java.lang
+D. java.net
+
+**Answer:** B
+**Explanation:** Scanner is in `java.util`.
+
+---
+
+### **15. How to start a thread?**
+
+A. run()
+B. start()
+C. init()
+D. execute()
+
+**Answer:** B
+**Explanation:** `start()` creates a new thread and calls `run()` internally.
+
+---
+
+### **16. Which class is immutable?**
+
+A. String
+B. StringBuilder
+C. ArrayList
+D. HashMap
+
+**Answer:** A
+**Explanation:** String objects cannot be modified once created.
+
+---
+
+### **17. Which is a checked exception?**
+
+A. NullPointerException
+B. ArithmeticException
+C. IOException
+D. ArrayIndexOutOfBoundsException
+
+**Answer:** C
+**Explanation:** Checked exceptions must be handled at compile time.
+
+---
+
+### **18. Which keyword is used to create object?**
+
+A. create
+B. new
+C. object
+D. init
+
+**Answer:** B
+**Explanation:** Objects are created using `new`.
+
+---
+
+### **19. Most restrictive access modifier?**
+
+A. public
+B. protected
+C. private
+D. default
+
+**Answer:** C
+**Explanation:** `private` is accessible only within the class.
+
+---
+
+### **20. Which keyword refers to parent class?**
+
+A. this
+B. super
+C. parent
+D. base
+
+**Answer:** B
+**Explanation:** `super` refers to parent class members.
+
+---
+
+### **21. Which is not part of Collection framework?**
+
+A. List
+B. Set
+C. Map
+D. Array
+
+**Answer:** D
+**Explanation:** Arrays are not part of Collections framework.
+
+---
+
+### **22. Which class implements List?**
+
+A. HashSet
+B. ArrayList
+C. HashMap
+D. TreeSet
+
+**Answer:** B
+**Explanation:** ArrayList implements List interface.
+
+---
+
+### **23. Which interface is used to create thread?**
+
+A. Runnable
+B. Serializable
+C. Cloneable
+D. Comparable
+
+**Answer:** A
+**Explanation:** Thread can be created using Runnable.
+
+---
+
+### **24. Which is not thread-safe?**
+
+A. Vector
+B. Hashtable
+C. ArrayList
+D. StringBuffer
+
+**Answer:** C
+**Explanation:** ArrayList is not synchronized.
+
+---
+
+### **25. Which keyword is used for abstraction?**
+
+A. abstract
+B. final
+C. static
+D. void
+
+**Answer:** A
+**Explanation:** `abstract` is used for abstraction.
+
+---
+
+### **26. Which is a marker interface?**
+
+A. Runnable
+B. Serializable
+C. Comparable
+D. Iterable
+
+**Answer:** B
+**Explanation:** Marker interfaces do not contain methods.
+
+---
+
+### **27. Which method interrupts thread?**
+
+A. stop()
+B. interrupt()
+C. destroy()
+D. end()
+
+**Answer:** B
+**Explanation:** `interrupt()` signals thread interruption.
+
+---
+
+### **28. How to get array length?**
+
+A. size()
+B. length
+C. length()
+D. getSize()
+
+**Answer:** B
+**Explanation:** Arrays use `length` property.
+
+---
+
+### **29. How to get String length?**
+
+A. size()
+B. length()
+C. getLength()
+D. len()
+
+**Answer:** B
+**Explanation:** Strings use `length()` method.
+
+---
+
+### **30. Which is not Java keyword?**
+
+A. static
+B. Boolean
+C. void
+D. private
+
+**Answer:** B
+**Explanation:** `Boolean` is a class, not keyword.
+
+---
+
+### **31. Which is dynamic array?**
+
+A. Array
+B. ArrayList
+C. Stack
+D. Tree
+
+**Answer:** B
+**Explanation:** ArrayList grows dynamically.
+
+---
+
+### **32. Which keyword ensures thread safety?**
+
+A. lock
+B. sync
+C. synchronized
+D. monitor
+
+**Answer:** C
+**Explanation:** `synchronized` controls access to shared resource.
+
+---
+
+### **33. Which method compares strings?**
+
+A. compare()
+B. equals()
+C. match()
+D. contains()
+
+**Answer:** B
+**Explanation:** `equals()` compares string content.
+
+---
+
+### **34. Which is unchecked exception?**
+
+A. IOException
+B. SQLException
+C. RuntimeException
+D. FileNotFoundException
+
+**Answer:** C
+**Explanation:** RuntimeException occurs at runtime.
+
+---
+
+### **35. Which class is used for file handling?**
+
+A. File
+B. FileReader
+C. FileWriter
+D. All
+
+**Answer:** D
+**Explanation:** All are used for file operations.
+
+---
+
+### **36. Which keyword defines interface?**
+
+A. interface
+B. class
+C. implements
+D. extends
+
+**Answer:** A
+
+---
+
+### **37. Multiple inheritance in Java is achieved by:**
+
+A. class
+B. interface
+C. abstract class
+D. final
+
+**Answer:** B
+**Explanation:** Java supports multiple inheritance via interfaces.
+
+---
+
+### **38. Convert String to int:**
+
+A. toInt()
+B. parseInt()
+C. convert()
+D. valueOf()
+
+**Answer:** B
+
+---
+
+### **39. Parent of Exception class?**
+
+A. Object
+B. Throwable
+C. Error
+D. Runtime
+
+**Answer:** B
+
+---
+
+### **40. Which is not a loop?**
+
+A. for
+B. while
+C. repeat
+D. do-while
+
+**Answer:** C
+
+---
+
+### **41. Encapsulation is achieved using:**
+
+A. Inheritance
+B. Getter/Setter
+C. Polymorphism
+D. Abstraction
+
+**Answer:** B
+
+---
+
+### **42. Which is not access modifier?**
+
+A. public
+B. private
+C. protected
+D. internal
+
+**Answer:** D
+
+---
+
+### **43. Key-value pair structure?**
+
+A. List
+B. Set
+C. Map
+D. Queue
+
+**Answer:** C
+
+---
+
+### **44. Which method is called before garbage collection?**
+
+A. gc()
+B. finalize()
+C. destroy()
+D. clean()
+
+**Answer:** B
+
+---
+
+### **45. Which is not wrapper class?**
+
+A. Integer
+B. Float
+C. Character
+D. String
+
+**Answer:** D
+
+---
+
+### **46. Keyword for constant?**
+
+A. const
+B. static
+C. final
+D. constant
+
+**Answer:** C
+
+---
+
+### **47. Which class handles date/time?**
+
+A. Date
+B. Calendar
+C. LocalDate
+D. All
+
+**Answer:** D
+
+---
+
+### **48. Which is not collection?**
+
+A. Stack
+B. Queue
+C. Tree
+D. List
+
+**Answer:** C
+
+---
+
+### **49. Add element to List?**
+
+A. insert()
+B. put()
+C. add()
+D. push()
+
+**Answer:** C
+
+---
+
+### **50. Which is not Map implementation?**
+
+A. HashMap
+B. TreeMap
+C. LinkedHashMap
+D. ArrayList
+
+**Answer:** D
+
+---

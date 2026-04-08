@@ -52,7 +52,8 @@ public class BookExample {
         System.out.println("Count of books with rating above 8: " + countHighRated);
 
         // 4. Grouping: Count books by genre
-        Map<Genre, Long> booksByGenre = bookList.stream()
+        Map<Genre, Long> booksByGenre = 
+        		bookList.stream()
                 .collect(Collectors.groupingBy(Book::getGenre, Collectors.counting()));
         System.out.println("Count of books by genre: " + booksByGenre);
         
@@ -60,7 +61,6 @@ public class BookExample {
         // 5. Sorted: Sort books by rating in descending order
         List<Book> sortedByRating = bookList.stream()
                 .sorted(Comparator.comparingDouble(Book::getRating).reversed())
-                .limit(3)
                 .collect(Collectors.toList());
         System.out.println("Books sorted by rating (descending): " + sortedByRating);
 

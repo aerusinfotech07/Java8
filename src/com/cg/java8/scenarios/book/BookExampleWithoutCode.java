@@ -63,27 +63,54 @@ public class BookExampleWithoutCode {
 
     // 1. Filter: Find all books published after 1950
     private void findBooksPublishedAfter1950(List<Book> bookList) {
-        // Implementation here
+        List<Book> booksList=getBooks();
+        booksList.stream()
+        .filter(book->book.getYear()>=1950)
+        .forEach(book->System.out.println(book));
+        
+        
+        
     }
 
     // 2. Map: Get a list of book titles
     private void getBookTitles(List<Book> bookList) {
         // Implementation here
+    	
+    	 List<String> bookTitleList=bookList.stream()
+    			 .map(Book::getTitle)
+    			 .collect(Collectors.toList());
+    	 bookTitleList.forEach(title->System.out.println(title));
+    			 
     }
 
     // 3. Count: Count books with a rating above 8
     private void countHighRatedBooks(List<Book> bookList) {
         // Implementation here
+    	long size=bookList.stream()
+    	.filter(book->book.getRating()>8)
+    	.count();
+    	
+    	System.out.println(size);
+    	
     }
 
     // 4. Grouping: Count books by genre
     private void countBooksByGenre(List<Book> bookList) {
         // Implementation here
+    	bookList.stream()
+    	.collect(Collectors
+    			.groupingBy(Book::getGenre,Collectors.counting()))
+    	.forEach((k,v)->System.out.println(k+" "+v));
+    	
     }
 
     // 5. Sorted: Sort books by rating in descending order
     private void sortBooksByRating(List<Book> bookList) {
         // Implementation here
+    	bookList.stream()
+    	.sorted(Comparator.comparingDouble(Book::getRating).reversed())
+    	.forEach(book->System.out.println(book));
+    	
     }
 
     // 6. Peek: Print each book while counting them
