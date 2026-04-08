@@ -1,0 +1,629 @@
+---
+
+# ✅ String & Collections MCQs (201–250)
+
+---
+
+## 🔹 **STRING-BASED QUESTIONS**
+
+---
+
+### **201. What will be the output?**
+
+```java
+String s = "Java";
+s.concat("World");
+System.out.println(s);
+```
+
+A. JavaWorld
+B. Java
+C. Error
+
+**Answer:** B
+**Explanation:** String is immutable. `concat()` does not modify original unless assigned.
+
+---
+
+### **202. What will be the output?**
+
+```java
+String s = "Java";
+s = s.concat("World");
+System.out.println(s);
+```
+
+A. Java
+B. JavaWorld
+
+**Answer:** B
+**Explanation:** Result is stored back in `s`.
+
+---
+
+### **203. What will be the output?**
+
+```java
+String s1 = "Java";
+String s2 = "Java";
+System.out.println(s1 == s2);
+```
+
+A. true
+B. false
+
+**Answer:** A
+**Explanation:** Same reference from String Pool.
+
+---
+
+### **204. What will be the output?**
+
+```java
+String s1 = new String("Java");
+String s2 = "Java";
+System.out.println(s1 == s2);
+```
+
+A. true
+B. false
+
+**Answer:** B
+**Explanation:** Heap vs Pool objects → different references.
+
+---
+
+### **205. What will be the output?**
+
+```java
+String s1 = new String("Java");
+String s2 = new String("Java");
+System.out.println(s1.equals(s2));
+```
+
+A. true
+B. false
+
+**Answer:** A
+**Explanation:** equals() compares content.
+
+---
+
+### **206. What will be the output?**
+
+```java
+String s = "abc";
+System.out.println(s.substring(0,2));
+```
+
+A. ab
+B. abc
+C. bc
+
+**Answer:** A
+**Explanation:** End index is exclusive.
+
+---
+
+### **207. What will be the output?**
+
+```java
+String s = "Java";
+System.out.println(s.charAt(2));
+```
+
+A. v
+B. a
+C. error
+
+**Answer:** A
+**Explanation:** Index starts from 0.
+
+---
+
+### **208. What will be the output?**
+
+```java
+String s = "Java";
+System.out.println(s.indexOf('a'));
+```
+
+A. 1
+B. 3
+C. 0
+
+**Answer:** A
+**Explanation:** Returns first occurrence.
+
+---
+
+### **209. What will be the output?**
+
+```java
+String s = "Java";
+System.out.println(s.lastIndexOf('a'));
+```
+
+A. 1
+B. 3
+
+**Answer:** B
+
+---
+
+### **210. What will be the output?**
+
+```java
+String s = "Java";
+System.out.println(s.toLowerCase());
+```
+
+A. java
+B. JAVA
+
+**Answer:** A
+
+---
+
+### **211. What will be the output?**
+
+```java
+String s = " Java ";
+System.out.println(s.trim().length());
+```
+
+A. 4
+B. 6
+
+**Answer:** A
+**Explanation:** trim() removes spaces.
+
+---
+
+### **212. What will be the output?**
+
+```java
+String s = "";
+System.out.println(s.isEmpty());
+```
+
+A. true
+B. false
+
+**Answer:** A
+
+---
+
+### **213. What will be the output?**
+
+```java
+String s = null;
+System.out.println("abc".equals(s));
+```
+
+A. true
+B. false
+C. Exception
+
+**Answer:** B
+**Explanation:** equals() handles null safely.
+
+---
+
+### **214. What will be the output?**
+
+```java
+String s = null;
+System.out.println(s.equals("abc"));
+```
+
+A. true
+B. false
+C. Exception
+
+**Answer:** C
+**Explanation:** NullPointerException.
+
+---
+
+### **215. What will be the output?**
+
+```java
+String s = "Java";
+System.out.println(s.replace('a','o'));
+```
+
+A. Jovo
+B. Java
+
+**Answer:** A
+
+---
+
+### **216. What will be the output?**
+
+```java
+StringBuilder sb = new StringBuilder("Java");
+sb.append("World");
+System.out.println(sb);
+```
+
+A. Java
+B. JavaWorld
+
+**Answer:** B
+**Explanation:** StringBuilder is mutable.
+
+---
+
+### **217. Which is mutable?**
+
+A. String
+B. StringBuilder
+C. StringBuffer
+
+**Answer:** B, C
+**Explanation:** Both are mutable.
+
+---
+
+### **218. Which is thread-safe?**
+
+A. StringBuilder
+B. StringBuffer
+
+**Answer:** B
+
+---
+
+### **219. What will be the output?**
+
+```java
+String s = "abc";
+s.toUpperCase();
+System.out.println(s);
+```
+
+A. ABC
+B. abc
+
+**Answer:** B
+
+---
+
+### **220. What will be the output?**
+
+```java
+String s = "abc";
+s = s.toUpperCase();
+System.out.println(s);
+```
+
+A. ABC
+B. abc
+
+**Answer:** A
+
+---
+
+## 🔹 **COLLECTIONS-BASED QUESTIONS**
+
+---
+
+### **221. Which allows duplicates?**
+
+A. Set
+B. List
+C. Map
+
+**Answer:** B
+
+---
+
+### **222. Which does not allow duplicates?**
+
+A. List
+B. Set
+C. Queue
+
+**Answer:** B
+
+---
+
+### **223. Which maintains insertion order?**
+
+A. HashSet
+B. LinkedHashSet
+C. TreeSet
+
+**Answer:** B
+
+---
+
+### **224. Which sorts elements?**
+
+A. HashSet
+B. TreeSet
+C. LinkedList
+
+**Answer:** B
+
+---
+
+### **225. What will be output?**
+
+```java
+Set<Integer> set = new HashSet<>();
+set.add(1);
+set.add(1);
+System.out.println(set.size());
+```
+
+A. 1
+B. 2
+
+**Answer:** A
+
+---
+
+### **226. What will be output?**
+
+```java
+List<Integer> list = new ArrayList<>();
+list.add(1);
+list.add(1);
+System.out.println(list.size());
+```
+
+A. 1
+B. 2
+
+**Answer:** B
+
+---
+
+### **227. Which is not List implementation?**
+
+A. ArrayList
+B. LinkedList
+C. HashSet
+
+**Answer:** C
+
+---
+
+### **228. Which is synchronized?**
+
+A. ArrayList
+B. Vector
+
+**Answer:** B
+
+---
+
+### **229. Which map allows null key?**
+
+A. HashMap
+B. Hashtable
+
+**Answer:** A
+
+---
+
+### **230. Which map is synchronized?**
+
+A. HashMap
+B. Hashtable
+
+**Answer:** B
+
+---
+
+### **231. Which map maintains insertion order?**
+
+A. HashMap
+B. LinkedHashMap
+C. TreeMap
+
+**Answer:** B
+
+---
+
+### **232. Which map sorts keys?**
+
+A. HashMap
+B. TreeMap
+
+**Answer:** B
+
+---
+
+### **233. What will be output?**
+
+```java
+Map map = new HashMap();
+map.put("A",1);
+map.put("A",2);
+System.out.println(map.size());
+```
+
+A. 1
+B. 2
+
+**Answer:** A
+**Explanation:** Duplicate key replaces value.
+
+---
+
+### **234. What will be output?**
+
+```java
+Map map = new HashMap();
+map.put(null,1);
+map.put(null,2);
+System.out.println(map.size());
+```
+
+A. 1
+B. 2
+
+**Answer:** A
+
+---
+
+### **235. Which interface is root of collection?**
+
+A. Collection
+B. List
+C. Iterable
+
+**Answer:** C
+
+---
+
+### **236. Which method adds element?**
+
+A. put()
+B. add()
+
+**Answer:** B
+
+---
+
+### **237. Which method removes element?**
+
+A. delete()
+B. remove()
+
+**Answer:** B
+
+---
+
+### **238. Which is FIFO?**
+
+A. Stack
+B. Queue
+
+**Answer:** B
+
+---
+
+### **239. Which is LIFO?**
+
+A. Queue
+B. Stack
+
+**Answer:** B
+
+---
+
+### **240. Which iterator method checks next element?**
+
+A. hasNext()
+B. next()
+
+**Answer:** A
+
+---
+
+### **241. Which method retrieves next element?**
+
+A. next()
+B. get()
+
+**Answer:** A
+
+---
+
+### **242. Which is fail-fast?**
+
+A. ArrayList
+B. Vector
+
+**Answer:** A
+
+---
+
+### **243. Which is not thread-safe?**
+
+A. ArrayList
+B. Vector
+
+**Answer:** A
+
+---
+
+### **244. Which class is used for sorting?**
+
+A. Arrays
+B. Collections
+C. Both
+
+**Answer:** C
+
+---
+
+### **245. What will be output?**
+
+```java
+List<String> list = Arrays.asList("A","B","C");
+System.out.println(list.size());
+```
+
+A. 2
+B. 3
+
+**Answer:** B
+
+---
+
+### **246. What happens here?**
+
+```java
+List<String> list = Arrays.asList("A","B");
+list.add("C");
+```
+
+A. Works
+B. Exception
+
+**Answer:** B
+**Explanation:** Fixed-size list.
+
+---
+
+### **247. Which is thread-safe collection alternative?**
+
+A. Collections.synchronizedList()
+B. ArrayList
+
+**Answer:** A
+
+---
+
+### **248. Which class is used for priority queue?**
+
+A. Queue
+B. PriorityQueue
+
+**Answer:** B
+
+---
+
+### **249. Which method clears collection?**
+
+A. clear()
+B. removeAll()
+
+**Answer:** A
+
+---
+
+### **250. Which method checks if collection contains element?**
+
+A. contains()
+B. exists()
+
+**Answer:** A
+
+---
